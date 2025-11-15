@@ -1,0 +1,112 @@
+{
+    "environment": {
+        "name": "Acrobot-v1",
+        "render_mode": null,
+        "max_episode_steps": 500,
+        "seed": null
+    },
+    "agents": [
+        {
+            "method_type": "value_based",
+            "method_name": "Dueling_DQN",
+            "parameters": {
+                "learning_rate": 0.001,
+                "gamma": 0.95,
+                "epsilon_start": 1.0,
+                "epsilon_end": 0.01,
+                "epsilon_decay": 0.995,
+                "batch_size": 32,
+                "memory_size": 100000,
+                "target_update": 10,
+                "hidden_layers": [
+                    128,
+                    128
+                ]
+            }
+        },
+        {
+            "method_type": "value_based",
+            "method_name": "Dueling_DQN_2",
+            "parameters": {
+                "learning_rate": 0.001,
+                "gamma": 0.95,
+                "epsilon_start": 1.0,
+                "epsilon_end": 0.01,
+                "epsilon_decay": 0.995,
+                "batch_size": 32,
+                "memory_size": 200000,
+                "target_update": 10,
+                "hidden_layers": [
+                    128,
+                    128
+                ]
+            }
+        },
+        {
+            "method_type": "value_based",
+            "method_name": "Dueling_DQN_3",
+            "parameters": {
+                "learning_rate": 0.001,
+                "gamma": 0.95,
+                "epsilon_start": 1.0,
+                "epsilon_end": 0.01,
+                "epsilon_decay": 0.995,
+                "batch_size": 32,
+                "memory_size": 500000,
+                "target_update": 10,
+                "hidden_layers": [
+                    128,
+                    128
+                ]
+            }
+        },
+        {
+            "method_type": "value_based",
+            "method_name": "Dueling_DQN_4",
+            "parameters": {
+                "learning_rate": 0.001,
+                "gamma": 0.95,
+                "epsilon_start": 1.0,
+                "epsilon_end": 0.01,
+                "epsilon_decay": 0.995,
+                "batch_size": 32,
+                "memory_size": 700000,
+                "target_update": 10,
+                "hidden_layers": [
+                    128,
+                    128
+                ]
+            }
+        },
+        {
+            "method_type": "value_based",
+            "method_name": "Dueling_DQN_5",
+            "parameters": {
+                "learning_rate": 0.001,
+                "gamma": 0.95,
+                "epsilon_start": 1.0,
+                "epsilon_end": 0.01,
+                "epsilon_decay": 0.995,
+                "batch_size": 32,
+                "memory_size": 1000000,
+                "target_update": 10,
+                "hidden_layers": [
+                    128,
+                    128
+                ]
+            }
+        }
+    ],
+    "gui": {
+        "window_width": 1200,
+        "window_height": 800,
+        "theme": "default",
+        "animation_enabled": true,
+        "plot_update_frequency": 1
+    },
+    "num_episodes": 1000,
+    "project_name": "RL_Workbench",
+    "experiment_name": "exp_20251112_121133",
+    "testset_dir": "C:\\Users\\KATKA\\Documents\\DataScience\\ReinforcementLearning\\Code\\RL-Training-1\\Katja\\workbench\\testset",
+    "results_dir": "./results"
+}
